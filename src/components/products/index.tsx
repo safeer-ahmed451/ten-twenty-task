@@ -79,7 +79,7 @@ export default function Products() {
           loop={true}
           spaceBetween={200}
           autoplay={{
-            delay: 3500000,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           coverflowEffect={{

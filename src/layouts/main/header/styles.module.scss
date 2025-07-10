@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .headerOuter{
-    position: absolute;
+    position: fixed;
     top: 20px;
     background: #ffffff;
     left: 20px;
@@ -9,6 +9,7 @@
     padding: 30px 25px;
     box-sizing: border-box;
     z-index: 99;
+    transition: 500ms;
     .mainNav{
         display: flex;
         justify-content: space-between;
@@ -23,8 +24,9 @@
         a{
             font-size: 16px;
             color: #000000;
-            &:hover{
+            &.active, &:hover{
                 color: $primary-color;
+                font-weight: 600;
             }
         }
         .contactUsBtn{
@@ -35,7 +37,20 @@
             padding: 10px 20px;
             gap: 15px;
             background: #fff;
+            &.active{
+                color: $primary-color;
+                border-color: $primary-color;
+            }
         }
+    }
+    &.showHeader{
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: 500ms;
+        position: fixed;
+        padding: 20px 25px;
+        border-bottom: 1px solid#ccc;
     }
 }
 
