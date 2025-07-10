@@ -9,21 +9,6 @@ $loader-dot-size: 20px;
 
 @mixin respond($breakpoint) {
   // $breakpoint is simply a variable that can have several values
-  @if $breakpoint==extralargeScreen {
-    @media only screen and (max-width: 1600px) {
-      @content;
-    }
-  } 
-  @if $breakpoint==largeScreen {
-    @media only screen and (max-width: 1320px) {
-      @content;
-    }
-  }
-  @if $breakpoint==laptop {
-    @media only screen and (max-width: 1260px) {
-      @content;
-    }
-  }
   @if $breakpoint==minlaptop {
     @media only screen and (max-width: 1200px) {
       @content;
