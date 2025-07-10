@@ -5,7 +5,7 @@ import { ChildNode } from "@/types";
 import MainWrapper from "@/layouts/main/MainWrapper";
 
 export const metadata: Metadata = {
-  title: "Orbit Cosmos Task",
+  title: "Ten Twenty Task",
 };
 
 export default function RootLayout({ children }: ChildNode) {
